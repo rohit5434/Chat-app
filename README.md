@@ -1,60 +1,60 @@
-# 💬 Real-Time Chat Application
+# 💬 Real-Time Chat App
 
-A full-stack real-time chat application built with **React** on the frontend and **Spring Boot + WebSocket + STOMP** on the backend. The app supports **room-based chat**, live message broadcasting, and smooth user interactions — all in real time.
+A full-stack chat application built using **React.js** for the frontend and **Spring Boot with WebSocket** for the backend. It supports real-time messaging in chat rooms with a simple and responsive UI.
 
 ---
 
-
 ## 🧰 Tech Stack
 
-- **Frontend**: React.js, SockJS, STOMP over WebSocket
-- **Backend**: Spring Boot, WebSocket, STOMP Protocol
-- **Build Tools**: Maven, npm
+- **Frontend**: React, WebSocket (via SockJS + STOMP)
+- **Backend**: Spring Boot, WebSocket
+- **Build Tools**: npm, Maven
 - **Languages**: Java, JavaScript
 
 ---
 
 ## 📁 Project Structure
 
+```
 chat-app/
-├── chat-app-backend/ # Spring Boot backend
-└── front-chat/ # React frontend
-
+├── chat-app-backend/   # Spring Boot backend
+└── front-chat/         # React frontend
+```
 
 ---
 
 ## 🚀 Features
 
-- Join or create chat rooms
-- Real-time communication using WebSockets
-- Auto-scroll chat UI
-- Notification when users join/leave
-- Clean and responsive UI
+- Real-time messaging
+- Create or join chat rooms
+- User join/leave notifications
+- Auto-scrolling chat UI
+- Responsive layout
 
 ---
 
-## ⚙️ Getting Started
+## ⚙️ How to Run
 
-### Prerequisites
+### Backend (Spring Boot)
 
-- Java 11 or higher
-- Maven
-- Node.js & npm
-- Git
-
-### Backend Setup
-
-```bash```
+```bash
 cd chat-app-backend
 mvn clean install
-mvn spring-boot:run 
+mvn spring-boot:run
+```
+Runs at: `http://localhost:8080`
 
-The backend runs on http://localhost:8080 and handles WebSocket connections.
+---
 
-### Frontend Setup
+### Frontend (React)
+
+```bash
 cd front-chat
 npm install
 npm start
+```
+Runs at: `http://localhost:3000`
 
+---
 
-
+If you find any issue or have suggestions, feel free to reach out or open an issue.
